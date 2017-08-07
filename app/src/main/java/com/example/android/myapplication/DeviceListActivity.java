@@ -97,7 +97,6 @@ public class DeviceListActivity extends Activity {
         this.registerReceiver(mReceiver, filter);
 
         mService = new BluetoothService(this, null);
-
         // Get a set of currently paired devices
         Set<BluetoothDevice> pairedDevices = mService.getPairedDev();
 
